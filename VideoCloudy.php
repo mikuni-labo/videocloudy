@@ -26,7 +26,7 @@ use App\Lib\Api\VideoCloud\VideosClient as Videos;
  * @link    https://github.com/mikuni-labo
  * @since   Sat, 15 Apr 2017 09:47:32 +0900
  */
-class VideoCloud extends Connection
+class VideoCloudy extends Connection
 {
     use Assets;
     use Auth;
