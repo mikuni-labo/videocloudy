@@ -1,7 +1,12 @@
 {
     "name": "mikuni-labo/videocloudy",
     "description": "This library is Manipulate the VideoCloud API for PHP.",
-    "keywords": ["videocloud", "brightcove", "api", "php"],
+    "keywords": [
+        "videocloud",
+        "brightcove",
+        "api",
+        "php"
+    ],
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/mikuni-labo/videocloudy",
@@ -18,10 +23,10 @@
     },
     "require": {
         "php": ">=5.4.0",
-        "mikuni-labo/curly": "0.0.1"
+        "mikuni-labo/curly": "~1.0.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.*"
+        "phpunit/phpunit": "~4.0"
     },
     "autoload": {
         "psr-4": {
