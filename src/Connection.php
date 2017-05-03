@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Lib\Api\VideoCloud;
+namespace MikuniLabo\VideoCloudy;
 
-use App\Lib\Api\Curl;
+use MikuniLabo\Curly\Curly;
 
 /**
  * Connection for VideoCloud
@@ -21,7 +21,7 @@ class Connection
      */
     public function __construct()
     {
-        $this->ch = new Curl;
+        $this->ch = new Curly;
     }
 
     /**

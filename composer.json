@@ -29,8 +29,8 @@
         "phpunit/phpunit": "~4.0"
     },
     "autoload": {
-        "psr-4": {
-            "MikuniLabo\\Videocloudy\\": "src"
+        "psr-0": {
+            "MikuniLabo\\Videocloudy\\": "src/"
         }
     },
     "config": {

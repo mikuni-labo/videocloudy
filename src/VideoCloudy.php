@@ -1,15 +1,14 @@
 <?php
+namespace MikuniLabo\VideoCloudy;
 
-namespace App\Lib\Api\VideoCloud;
-
-use App\Lib\Api\VideoCloud\AssetsClient as Assets;
-use App\Lib\Api\VideoCloud\AuthClient as Auth;
-use App\Lib\Api\VideoCloud\Connection;
-use App\Lib\Api\VideoCloud\DynamicIngestClient as DynamicIngest;
-use App\Lib\Api\VideoCloud\FoldersClient as Folders;
-use App\Lib\Api\VideoCloud\NotificationsClient as Notifications;
-use App\Lib\Api\VideoCloud\PlaylistsClient as Playlists;
-use App\Lib\Api\VideoCloud\VideosClient as Videos;
+use MikuniLabo\VideoCloudy\AssetsClient as Assets;
+use MikuniLabo\VideoCloudy\AuthClient as Auth;
+use MikuniLabo\VideoCloudy\Connection;
+use MikuniLabo\VideoCloudy\DynamicIngestClient as DynamicIngest;
+use MikuniLabo\VideoCloudy\FoldersClient as Folders;
+use MikuniLabo\VideoCloudy\NotificationsClient as Notifications;
+use MikuniLabo\VideoCloudy\PlaylistsClient as Playlists;
+use MikuniLabo\VideoCloudy\VideosClient as Videos;
 
 /**
  * VideoCloud Client

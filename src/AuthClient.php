@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Lib\Api\VideoCloud;
+namespace MikuniLabo\VideoCloudy;
 
 /**
  * VideoCloud OAuth API Client
