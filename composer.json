@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MikuniLabo\\Videocloudy\\": "src/MikuniLabo/Videocloudy/"
+            "MikuniLabo\\Videocloudy\\": "src/"
         }
     },
     "config": {
