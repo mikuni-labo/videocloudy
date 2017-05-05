@@ -10,12 +10,6 @@ namespace MikuniLabo\VideoCloudy;
  */
 Trait AuthClient
 {
-    /** @var string CMS URL */
-    private $cmsUrl;
-
-    /** @var string DI URL */
-    private $diUrl;
-
     /** @var string API Auth URL */
     private $authUrl;
 
@@ -55,28 +49,6 @@ Trait AuthClient
         }
 
         return $result;
-    }
-
-    public function setCmsUrl($cmsUrl)
-    {
-        $this->cmsUrl = $cmsUrl;
-        return $this;
-    }
-
-    public function getCmsUrl()
-    {
-        return $this->cmsUrl;
-    }
-
-    public function setDIUrl($diUrl)
-    {
-        $this->diUrl = $diUrl;
-        return $this;
-    }
-
-    public function getDIUrl()
-    {
-        return $this->diUrl;
     }
 
     public function setAuthUrl($authUrl)

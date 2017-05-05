@@ -35,10 +35,38 @@ class VideoCloudy extends Connection
     use Playlists;
     use Videos;
 
+    const CMS_REQUEST_URL  = 'https://cms.api.brightcove.com';
+    const DI_REQUEST_URL   = 'https://ingest.api.brightcove.com';
+    const AUTH_REQUEST_URL = 'https://oauth.brightcove.com';
+
+    /** @var string CMS URL */
+    private $cmsUrl;
+
     /** @return void */
     public function __construct()
     {
         parent::__construct();
+
+        $this->init();
+    }
+
+    /** @return void */
+    private function init()
+    {
+        $this->setCmsUrl( self::CMS_REQUEST_URL );
+        $this->setDIUrl( self::DI_REQUEST_URL );
+        $this->setAuthUrl( self::AUTH_REQUEST_URL );
+    }
+
+    public function setCmsUrl($cmsUrl)
+    {
+        $this->cmsUrl = $cmsUrl;
+        return $this;
+    }
+
+    public function getCmsUrl()
+    {
+        return $this->cmsUrl;
     }
 
 }

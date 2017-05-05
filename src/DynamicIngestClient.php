@@ -10,6 +10,9 @@ namespace MikuniLabo\VideoCloudy;
  */
 Trait DynamicIngestClient
 {
+    /** @var string DI URL */
+    private $diUrl;
+
     /** @var string Callback URL */
     private $callbackUrl;
 
@@ -60,6 +63,17 @@ Trait DynamicIngestClient
 
         /** XXX APIから原因不明のInternal Server Errorが返される時は、パラメータのプロファイル設定等を要チェック */
         return $this->call('POST', $url, $header, $param);
+    }
+
+    public function setDIUrl($diUrl)
+    {
+        $this->diUrl = $diUrl;
+        return $this;
+    }
+
+    public function getDIUrl()
+    {
+        return $this->diUrl;
     }
 
     public function setVideoProfile($videoProfile)

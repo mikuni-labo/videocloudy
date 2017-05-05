@@ -18,7 +18,7 @@ $ composer require mikuni-labo/videocloudy
 ```json
 {
     "require": {
-        "mikuni-labo/videocloudy": "1.0.0"
+        "mikuni-labo/videocloudy": "1.0.*"
     }
 }
 ```
@@ -35,9 +35,6 @@ $vc = new VideoCloudy;
 $vc->setAccountId( '0000000000000' );                 // Account ID
 $vc->setClientId( 'xxxxxxxx-yyyy-zzzz-aaaa-bbbbbbb' );// Client ID
 $vc->setClientSecret( 'xxxxxxxxxxxxxxxxxxxxxxxxx' );  // Client Secret
-$vc->setAuthUrl( 'https://oauth.brightcove.com' );    // OAuth URL
-$vc->setCmsUrl( 'https://cms.api.brightcove.com' );   // CMS API  URL
-$vc->setDIUrl( 'https://ingest.api.brightcove.com' ); // Dynamic Ingest API URL
 $vc->setVideoProfile( 'your-profile' );               // Video Profile
 $vc->setCallbackUrl( 'http://your-callback-url/' );   // Callback URL
 
