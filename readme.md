@@ -18,7 +18,7 @@ $ composer require mikuni-labo/videocloudy
 ```json
 {
     "require": {
-        "mikuni-labo/videocloudy": "1.0.*"
+        "mikuni-labo/videocloudy": "^1.0.0"
     }
 }
 ```
